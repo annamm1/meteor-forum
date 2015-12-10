@@ -1,0 +1,18 @@
+<template name="postItem">
+  <div class="post">
+    <div class="post-content">
+      <h3>{{title}} <span> {{creationDateView}}</span></h3>
+      <p>
+          submitted by {{author}},
+          <a href="{{pathFor 'postPage'}}">{{commentsCount}} comments</a>
+        {{#if ownPost}}
+            <a href="{{pathFor 'postEdit'}}">Edit</a>
+        {{/if}}
+      </p>
+      <p>{{summary}}
+       </p>
+        <div ><a href="{{pathFor 'postPage'}}" class="details btn btn-default">Details</a></div>
+    </div>
+	   
+  </div>
+</template>

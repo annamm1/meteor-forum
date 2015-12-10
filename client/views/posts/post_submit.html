@@ -1,0 +1,35 @@
+<template name="postSubmit">
+    <form class="main form">
+        <div class="form-group">
+            <label class="control-label" for="title">Title</label>
+            <div class="controls">
+                <input name="title" id="title" type="text" value="" placeholder="Name your post" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="url">Seo Url</label>
+            <div class="controls">
+                <input name="seoUrl" id="url" type="text" value="" placeholder="Your Seo Url" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="published">Published</label>
+            <div class="controls">
+                <input name="published" id="published" type="checkbox" value="" placeholder="Publish Post?" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="summary">Summary</label>
+            <div class="controls">
+                <textarea name="summary" id="summary" value="" placeholder="Enter Summary" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="title">Text</label>
+            <div class="controls">
+                <textarea name="text" id="title" value="" placeholder="Enter Text" class="form-control"></textarea>
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
+</template>

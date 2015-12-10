@@ -1,0 +1,16 @@
+<template name="postDetail">
+    <div class="post">
+        <div class="post-content">
+            <h3>{{title}} <span>{{creationDateView}}</span></h3>
+            <p>        submitted by {{author}}
+                {{#if ownPost}}
+                    <a href="{{pathFor 'postEdit'}}">Edit</a>
+                {{/if}}
+            </p>
+            <p>{{summary}}</p>
+        </div>
+        <div class="post-content">
+          {{textView}}
+        </div>
+    </div>
+</template>
